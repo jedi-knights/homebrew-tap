@@ -5,21 +5,21 @@
 class Kyber < Formula
   desc "A function-level Go code-quality analyzer — cyclomatic complexity, testability, readability, and more."
   homepage "https://github.com/jedi-knights/kyber"
-  version "0.5.0"
+  version "0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jedi-knights/kyber/releases/download/v0.5.0/kyber_0.5.0_darwin_amd64.tar.gz"
-      sha256 "71bd8501b1244b864763d3f76a7f1df929e838913cb40365b11e4c22474570a2"
+      url "https://github.com/jedi-knights/kyber/releases/download/v0/kyber_0_darwin_amd64.tar.gz"
+      sha256 "d3be2fc4adb57dbd754512d76fb2d29e8f1dbffdbc8a9b36a44a95c38ce7643e"
 
       define_method(:install) do
         bin.install "kyber"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jedi-knights/kyber/releases/download/v0.5.0/kyber_0.5.0_darwin_arm64.tar.gz"
-      sha256 "673a2b67fdf54fab2b80872e97340ac0173e2065c10bc5f6bb118ee7b5a58733"
+      url "https://github.com/jedi-knights/kyber/releases/download/v0/kyber_0_darwin_arm64.tar.gz"
+      sha256 "3d41e9251e9dd44a91ee42725a2fc3cfdc2e54a365b22e7059b13f9eafe72c7e"
 
       define_method(:install) do
         bin.install "kyber"
@@ -29,15 +29,15 @@ class Kyber < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jedi-knights/kyber/releases/download/v0.5.0/kyber_0.5.0_linux_amd64.tar.gz"
-      sha256 "0e7f0418e3ff6002496eca8ebb923f426a0b3c45c517f743b9c54552e6263177"
+      url "https://github.com/jedi-knights/kyber/releases/download/v0/kyber_0_linux_amd64.tar.gz"
+      sha256 "caddb6fefd9812baedbe545570fc8fab910027db125db4cc0eaad477f229886b"
       define_method(:install) do
         bin.install "kyber"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jedi-knights/kyber/releases/download/v0.5.0/kyber_0.5.0_linux_arm64.tar.gz"
-      sha256 "72bbf0038d13b5b3ce69ea56d6ac4efaf3f5988d927194a6c4e9237ef62ca212"
+      url "https://github.com/jedi-knights/kyber/releases/download/v0/kyber_0_linux_arm64.tar.gz"
+      sha256 "b06046cae1f5cb3fa6648e8375640a1ece7de513f0d2c634c4861c1bd4ad3975"
       define_method(:install) do
         bin.install "kyber"
       end
