@@ -5,21 +5,21 @@
 class Lexicon < Formula
   desc "A markdown-native requirements DSL, translatable to Gherkin, Gauge, and beyond."
   homepage "https://github.com/jedi-knights/lexicon"
-  version "0.1.1"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jedi-knights/lexicon/releases/download/v0.1.1/lexicon_0.1.1_darwin_amd64.tar.gz"
-      sha256 "ac581323a1cf3fb3c23d07a25602b7c127b86ac85539f5a273afad128bf2680a"
+      url "https://github.com/jedi-knights/lexicon/releases/download/v0.2.0/lexicon_0.2.0_darwin_amd64.tar.gz"
+      sha256 "b11ba5e0b3ddc4503419f918c2db941e6c6d3153af42a688306edc7cf0d5e487"
 
       define_method(:install) do
         bin.install "lexicon"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jedi-knights/lexicon/releases/download/v0.1.1/lexicon_0.1.1_darwin_arm64.tar.gz"
-      sha256 "72bdc99a8b8f88560b1e6931c27cb21e36accde2eda8f7b01eaabbb057d075ea"
+      url "https://github.com/jedi-knights/lexicon/releases/download/v0.2.0/lexicon_0.2.0_darwin_arm64.tar.gz"
+      sha256 "7c087f83a3af8589e6f4d358150889ee4243b8392365916e1832db39053d5265"
 
       define_method(:install) do
         bin.install "lexicon"
@@ -29,15 +29,15 @@ class Lexicon < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jedi-knights/lexicon/releases/download/v0.1.1/lexicon_0.1.1_linux_amd64.tar.gz"
-      sha256 "591a994f09e79a7caac2827e1d53f4b8a0b9b8f67fb83efe57896b719f80c4d8"
+      url "https://github.com/jedi-knights/lexicon/releases/download/v0.2.0/lexicon_0.2.0_linux_amd64.tar.gz"
+      sha256 "2f1f177f2403871d8ecb86b388d86aacbb3b094d763eacf523368c9e3f3ee8f6"
       define_method(:install) do
         bin.install "lexicon"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jedi-knights/lexicon/releases/download/v0.1.1/lexicon_0.1.1_linux_arm64.tar.gz"
-      sha256 "ace9463fbb0e15b678abbf70e03cf0c6d7d80a1370f68e4c4e25ccd20745b73c"
+      url "https://github.com/jedi-knights/lexicon/releases/download/v0.2.0/lexicon_0.2.0_linux_arm64.tar.gz"
+      sha256 "566aa757abe12b8bd17fbcf34f1c5a7acb770d6cd87a16df17b31c6854c0905f"
       define_method(:install) do
         bin.install "lexicon"
       end
