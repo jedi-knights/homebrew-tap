@@ -21,6 +21,7 @@ brew install jedi-knights/tap/<formula>
 | --- | --- |
 | [`kyber`](https://github.com/jedi-knights/kyber) | A function-level Go code-quality analyzer — cyclomatic complexity, testability, readability, and more. |
 | [`lexicon`](https://github.com/jedi-knights/lexicon) | A markdown-native requirements DSL, translatable to Gherkin, Gauge, and beyond. |
+| [`plug-scaffold`](https://github.com/jedi-knights/plug-scaffold) | A Neovim plugin project generator that emits a `plug-audit`-clean skeleton. |
 | [`toon-cli`](https://github.com/jedi-knights/toon-cli) | A stdin/stdout JSON/YAML ⇄ TOON converter. |
 
 ## How formulae get here
