@@ -5,21 +5,21 @@
 class PlugScaffold < Formula
   desc "Neovim plugin project generator"
   homepage "https://github.com/jedi-knights/plug-scaffold"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jedi-knights/plug-scaffold/releases/download/v0.2.0/plug-scaffold_0.2.0_darwin_amd64.tar.gz"
-      sha256 "8fda1b09b9d7c3a9eb16989f3e2b83ad7c19a909b55f97e491c4336d1f1791d4"
+      url "https://github.com/jedi-knights/plug-scaffold/releases/download/v0.2.1/plug-scaffold_0.2.1_darwin_amd64.tar.gz"
+      sha256 "b37e158608a450cce8c4547ee65c1221e85f61205a19fe5e4f915ca6cfe2e526"
 
       define_method(:install) do
         bin.install "plug-scaffold"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jedi-knights/plug-scaffold/releases/download/v0.2.0/plug-scaffold_0.2.0_darwin_arm64.tar.gz"
-      sha256 "e0f5c32690f301021d5a6abf359ed65f0a81c75d48169a25e049e6d28a3e39de"
+      url "https://github.com/jedi-knights/plug-scaffold/releases/download/v0.2.1/plug-scaffold_0.2.1_darwin_arm64.tar.gz"
+      sha256 "7fc4e1c41af5fcdb0b5925a494a5cb2506de276f409647bb17802a21a350b3d2"
 
       define_method(:install) do
         bin.install "plug-scaffold"
@@ -29,15 +29,15 @@ class PlugScaffold < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jedi-knights/plug-scaffold/releases/download/v0.2.0/plug-scaffold_0.2.0_linux_amd64.tar.gz"
-      sha256 "9bae18b061031c3b2e43bc854934734caf9789cba492492de2d33195e0ea2a4e"
+      url "https://github.com/jedi-knights/plug-scaffold/releases/download/v0.2.1/plug-scaffold_0.2.1_linux_amd64.tar.gz"
+      sha256 "ebe9d6c3f02ca6a01f457677561db39bc809e7eaefab67ada531ab1d9e467726"
       define_method(:install) do
         bin.install "plug-scaffold"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jedi-knights/plug-scaffold/releases/download/v0.2.0/plug-scaffold_0.2.0_linux_arm64.tar.gz"
-      sha256 "8edb628beddf5752416a3c087b8432bc5d6d6d6d176f45d8b0479955406c2a45"
+      url "https://github.com/jedi-knights/plug-scaffold/releases/download/v0.2.1/plug-scaffold_0.2.1_linux_arm64.tar.gz"
+      sha256 "21d127719cf91d6de9e1ab80c15bc68798e3390aa66ed972863b1e1beaa7dc3e"
       define_method(:install) do
         bin.install "plug-scaffold"
       end
