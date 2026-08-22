@@ -5,21 +5,21 @@
 class Neospec < Formula
   desc "A self-contained test runner and coverage tool for Neovim plugins and distributions."
   homepage "https://github.com/jedi-knights/neospec"
-  version "0.14.0"
+  version "0.15.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jedi-knights/neospec/releases/download/v0.14.0/neospec_0.14.0_darwin_amd64.tar.gz"
-      sha256 "df7f38fc58596eaca03d6aeb3ec97253b125fc2c4438ca5c5aecc2b9b5dfaef5"
+      url "https://github.com/jedi-knights/neospec/releases/download/v0.15.0/neospec_0.15.0_darwin_amd64.tar.gz"
+      sha256 "d5928bd7f197c8c75d348d7839aeb43b0ce7969404a213ba0174c60f1393f826"
 
       define_method(:install) do
         bin.install "neospec"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jedi-knights/neospec/releases/download/v0.14.0/neospec_0.14.0_darwin_arm64.tar.gz"
-      sha256 "cdb43d26dbd2ef62fbc3d10ecdf3c0abf534b23ed27eabaf5762396883807798"
+      url "https://github.com/jedi-knights/neospec/releases/download/v0.15.0/neospec_0.15.0_darwin_arm64.tar.gz"
+      sha256 "21e5d17d77a3a99a7d93ab60709b6ffb0209224d8e3696ee7462b7c9b4658fbe"
 
       define_method(:install) do
         bin.install "neospec"
@@ -29,15 +29,15 @@ class Neospec < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jedi-knights/neospec/releases/download/v0.14.0/neospec_0.14.0_linux_amd64.tar.gz"
-      sha256 "dd53f99061e27816dcc3916a7e41b893394874709de260ab2b3efdcc3c34274d"
+      url "https://github.com/jedi-knights/neospec/releases/download/v0.15.0/neospec_0.15.0_linux_amd64.tar.gz"
+      sha256 "461188aeeb9518dc6d02ba27c2a249cee4d54ef1ec4505c74eee895414545253"
       define_method(:install) do
         bin.install "neospec"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jedi-knights/neospec/releases/download/v0.14.0/neospec_0.14.0_linux_arm64.tar.gz"
-      sha256 "4f6eeb47a3d3b969f79139492285314bef18471686403df6361908a583d67af0"
+      url "https://github.com/jedi-knights/neospec/releases/download/v0.15.0/neospec_0.15.0_linux_arm64.tar.gz"
+      sha256 "2bc99a5d29c95a6e5b25ce584cd61cf94ceb5f8320e4d706b72430cbec51153e"
       define_method(:install) do
         bin.install "neospec"
       end
